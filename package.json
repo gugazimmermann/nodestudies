@@ -1,0 +1,49 @@
+{
+    "name": "nodestudies",
+    "version": "1.0.0",
+    "description": "node.js studies for the JSNAD exam",
+    "author": {
+        "name": "Guga Zimmermann",
+        "email": "gugazimmermann@gmail.com",
+        "url": "https://www.linkedin.com/in/guga-zimmermann/"
+    },
+    "contributors": [
+        {
+            "name": "Some Name",
+            "email": "example@example.com",
+            "url": "https://www.linkedin.com/in/guga-zimmermann/"
+        }
+    ],
+    "homepage": "https://github.com/gugazimmermann/nodestudies#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gugazimmermann/nodestudies.git"
+    },
+    "license": "ISC",
+    "keywords": [
+        "node",
+        "node.js",
+        "study",
+        "JSNAD",
+        "certification"
+    ],
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "NODE_ENV=development npm run lint && npm start",
+        "lint": "eslint ./**/*.js"
+    },
+    "dependencies": {
+        "csvtojson": "^2.0.10",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "request": "^2.88.2",
+        "request-promise": "^4.2.5"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.4"
+    },
+    "bugs": {
+        "url": "https://github.com/gugazimmermann/nodestudies/issues"
+    }
+}
