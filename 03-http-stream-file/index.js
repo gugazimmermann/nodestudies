@@ -10,7 +10,7 @@ const PORT = process.env.PORT03 || 3000;
 app.listen(PORT, () => console.log(`Server: localhost:${PORT}/download`));
 
 app.get("/download", (req, res, next) => {
-	const fileStream = fs.createReadStream(`${__dirname}/data/planets.csv`);
+	const fileStream = fs.createReadStream(`${__dirname}/../files/planets.csv`);
 	fileStream.on("open", () => {
 		res.attachment(process.env.FILENAME03);
 		fileStream.pipe(res);
